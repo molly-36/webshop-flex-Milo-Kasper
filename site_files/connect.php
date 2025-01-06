@@ -2,7 +2,7 @@
     $host = "localhost";
     $username="root";
     $password= "";
-    $dbname= "eerste database";
+    $dbname= "database_webshop";
     $mysqli = new mysqli($host, $username, $password, $dbname);
     
     if ($mysqli->connect_error) {
