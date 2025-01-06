@@ -1,0 +1,21 @@
+style/css:
+
+
+--> animatie met videos die sliden over pagina
+--> scrollen naar verschillende richtingen
+--> fotos in kader in row/tabel
+--> luxueus
+--> kleuren: zwart, goud
+--> loading screen
+--> animaties op fotos, refresh, cookies
+--> humor/ easter eggs
+--> als je cookies weigert, je moeder scherm.
+--> schaduwen
+--> klikt op auto en smooth transitie naar volgende pagina
+
+functies:
+
+
+--> verschillende kanten van de auto zien
+--> site in verschillende regio's anders; bv. currencies etc.
+--> links naar socials via icons
