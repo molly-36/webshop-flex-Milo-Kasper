@@ -5,7 +5,7 @@ style/css:
 --> scrollen naar verschillende richtingen
 --> fotos in kader in row/tabel
 --> luxueus
---> kleuren: zwart, blauw, donkerblauw
+--> kleuren: zwart, goud
 --> loading screen
 --> animaties op fotos, refresh, cookies
 --> humor/ easter eggs
