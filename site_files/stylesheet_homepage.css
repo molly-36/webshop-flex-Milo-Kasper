@@ -1,5 +1,16 @@
+#log_uit_button{
+background-color: aqua;
+border-radius: 8px;
+}
 ul{
-    background-color: gold;
+    float:top;
+    background-color: antiquewhite;
+    align-content: end;
+}
+li{
     float: top;
-    
+    cursor: pointer;
+}
+body{
+    background-color: black;
 }

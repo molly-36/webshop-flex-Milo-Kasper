@@ -15,12 +15,11 @@
     }
     ?>
 <ul>
-    <li><a href="log_uit">log uit</a></li>
+    <li><button id="log_uit_button"><a href="log_uit.php">log uit</a></button class="log_uit_button"></li>
     <li><a href="nieuws.php">nieuw nieuws</a></li>
     <li><a href="contact.php">contacteer ons</a></li>
 </ul>
 <body>
     <h1>Welkom!</h1>
-   <button>TEET</button>
 </body>
 </html>
