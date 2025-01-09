@@ -13,6 +13,7 @@ style/css:
 --> schaduwen
 --> klikt op auto en smooth transitie naar volgende pagina
 --> scrollbar is een auto
+--> animatie tot log in pagina
 
 functies:
 
