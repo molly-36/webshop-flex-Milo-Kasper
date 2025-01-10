@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet_log-inpage.css">
+    <link rel="stylesheet" href="loginStyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap" rel="stylesheet">
@@ -32,24 +32,29 @@
                 }
 
         }else{
-            echo'<form action="index.php" method="POST">
-            <label>username:</label>
-            <input type="text" name="username">
-            <label>password</label>
-            <input type="password" name="password">
-            <input type="submit" value="login" name="submit">
-            </form>';
-            echo'Wrong password or username';
-        }
-    }else{
-        echo'<form action="index.php" method="POST">
+            echo'
+
+            <table>
+            <tr><form action="index.php" method="POST">
             <input class="input" type="text" name="username" placeholder="username">
             <input class="input" type="password" name="password" placeholder="password">
             <input type="submit" value="login" name="submit">
             </form>';
+            echo'Wrong password or username';
+            echo'</tr></table>';
+        }
+    }else{
+        echo'
+        <table>
+        <form action="index.php" method="POST">
+        <tr><input class="input" type="text" name="username" placeholder="username"></tr>
+        <tr><input class="input" type="password" name="password" placeholder="password"></tr>
+        <tr><input type="submit" value="login" name="submit"></tr>
+        </form>';
+        echo'</table>';
     }
     ?>
-    <button style="background: transparent; border-color:grey; border-radius:5px;"><a href="register.php">heb je nog geen account? Registreer hier</a></button>
+    <button style="background: transparent; border-color:grey; border-radius:5px; margin: 20px;"><a href="register.php">heb je nog geen account? Registreer hier</a></button>
 </div>
 </body>
 </html>
