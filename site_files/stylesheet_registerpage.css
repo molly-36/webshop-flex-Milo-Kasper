@@ -6,3 +6,10 @@ body{
     justify-content: center;
     flex-direction: column;
 }
+
+button{
+    background-color: black;
+    color:white;
+    float: left 0px;
+    float:top 0px;
+}

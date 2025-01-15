@@ -42,6 +42,19 @@ h1{
     margin: 20px;
     background:transparent;
     border-radius: 10px;
+    color:white;
+}
+button{
+    background: transparent;
+    border-color:grey; 
+    border-radius:5px; 
+    margin: 20px;
+    width: 20px 30px;
+}
+
+a{
+    cursor: grab;
+    color: beige;
 }
 
 .imagelogin{

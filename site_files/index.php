@@ -28,7 +28,11 @@
             if($result->num_rows > 0) {
                 while ($row = $result->fetch_assoc()) {
                     $_SESSION["user_id"] = $row["user_id"];
-                    header("Location: home.php");
+                    if  (($_POST["username"] == "admin") && ($_POST["password"] == "admin")){
+                        $_SESSION['gebruikertype'] = "admin";
+                        header("Location:home.php");
+                    }
+                    header("Location:home.php");
                 }
 
         }else{
@@ -54,7 +58,7 @@
         echo'</table>';
     }
     ?>
-    <button style="background: transparent; border-color:grey; border-radius:5px; margin: 20px;"><a href="register.php">heb je nog geen account? Registreer hier</a></button>
+    <button><a href="register.php">heb je nog geen account? Registreer hier</a></button>
 </div>
 </body>
 </html>

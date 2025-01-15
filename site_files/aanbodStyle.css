@@ -1,0 +1,46 @@
+.container{
+    width: 500px;
+    height:500px;
+    border: solid 5px;
+    background-color: rgba(128, 22, 22, 0.56);
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+    align-items: flex-start;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.kid{
+    margin: 5px;
+    padding: 55px;
+    border: solid 3px;
+    border-radius: 10px;
+}
+
+#kid1{
+    background-color: blueviolet;
+}
+
+#kid2{
+    background-color: brown;
+}
+
+#kid3{
+    background-color: rgb(39, 219, 51);
+}
+
+#kid4{
+    background-color: cornflowerblue;
+}
+
+#kid5{
+    background-image: url("acc.png");
+    background-size: cover;
+}
+
+#kid6{
+    background-image: url(plop.jpg);
+    background-size: cover;
+}
