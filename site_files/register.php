@@ -7,7 +7,7 @@
     <title>register</title>
 </head>
 <button><a href="index.php"><--- terug</a></button>
-<body>
+<body>sssssssssss
         <h1>REGISTER</h1>
         <?php
             include("connect.php");
