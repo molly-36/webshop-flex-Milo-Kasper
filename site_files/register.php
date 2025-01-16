@@ -19,13 +19,16 @@
                 $result2 = $mysqli->query($sql2);
                 if($result2->num_rows > 0) {
                     echo '
-                    <form method="post" action="register.php">
-                    <label>username:</label>
-                    <input  type="text" name="username" placeholder="your username">
-                    <label>password:</label>
-                    <input type="password" name="password">
-                    <input type="submit" name="submit" value="registreer">
-                </form><br>
+                    <h1 id="h1A">account aanmaken</h1>
+<form method="post" action="register.php">
+<i id="slot" class="fa-solid fa-lock"></i>
+<i id="logo" class="fa-solid fa-user"></i>
+    
+                <input  id="invoer" type="text" name="username" placeholder="            your username"><br>
+                
+                <input id="invoer" type="password" name="password" placeholder="            wachtwoord"><br>
+                <input id="knop" type="submit" name="submit" value="registreer"> 
+            </form><br>
                 <span style="color:red;font-size:100px;background-color:darkred;">user al in gebruik</span>
                 ';
                 
@@ -38,12 +41,17 @@
                 }
                 else {
                     echo '
-                    <form method="post" action="register.php">
-                    <label>username:</label>
-                    <input  type="text" name="username" placeholder="your username">
-                    <label>password:</label>
-                    <input type="password" name="password">
-                    <input type="submit" name="submit" value="registreer">
+                    <h1 id="h1A">account aanmaken</h1>
+<form method="post" action="register.php">
+<i id="slot" class="fa-solid fa-lock"></i>
+<i id="logo" class="fa-solid fa-user"></i>
+    
+               
+                <input  id="invoer" type="text" name="username" placeholder="            your username"><br>
+                
+                <input id="invoer" type="password" name="password" placeholder="            wachtwoord"><br>
+                <input id="knop" type="submit" name="submit" value="registreer"> 
+            </form><br>
                 </form><br>
                 
                 <span style="color:red;font-size:100px;background-color:darkred;">er is iets fout gegaan: error 4</span>
