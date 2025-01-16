@@ -57,6 +57,8 @@
         </form>';
         echo'</table>';
     }
+
+    $_SESSION["cookieteller"] = 0;
     ?>
     <button><a href="register.php">heb je nog geen account? Registreer hier</a></button>
 </div>
