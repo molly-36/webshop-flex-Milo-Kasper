@@ -1,10 +1,8 @@
 body{
-
-
     background-image: url(873567.avif);
     background-size: cover;
-  
 }
+
 div{
 position: absolute;
 top: 40%;
@@ -16,20 +14,18 @@ box-shadow: 5px 10px 18px #353936;
 padding: 4%;
 z-index: -1;
 backdrop-filter: blur(5px);
-
 }
+
 #slot{
 color: white;
 position: absolute;
 left: 56%;
 top: 61.4%;
 z-index: 1;
-font-size: small;
+font-size: small;   
+}
 
-
-
-    
-}#logo{
+#logo{
   
     color: white;
 position: absolute;
@@ -37,32 +33,29 @@ left: 56%;
 top: 48.4%;
 z-index: 1;
 font-size: small;
-
 }
-#invoer{
-  
+
+#invoer{ 
 background-color: black;
 border-style: none; 
 border-bottom: solid;
 border-color: white;
 margin: 10px;
+}
 
-
-}h1{
+h1{
     color: white;
+} 
 
-
-} #knop{
+#knop{
 
   color: black;
   background-color: white;
     border-radius: 20px;
     border: none;
     position: static;
-    left: px;
+    left: 8px;
     top: 180px;
-
     padding-left: 50px;
     padding-right: 50px;
-
 }

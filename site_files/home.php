@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="homeStyle.css">
     <title>Nieuw Nieuws</title>
 </head>
     <?php
+    //connect------------------------------------------------------------------------------------------------------
     include("connect.php");
     session_start();
-    
+    //userid controle----------------------------------------------------------------------------------------------
     if(!isset($_SESSION["user_id"])) {
         header("Location: index.php");
     }
     ?>
+    <!--navbar---------------------------------------------------------------------------------------------->
 <ul>
     <li><button id="log_uit_button"><a href="log_uit.php">log uit</a></button class="log_uit_button"></li>
     <li><a href="nieuws.php">nieuw nieuws</a></li>
@@ -21,13 +23,15 @@
     <li><a href="aanbod.php">ons aanbod</a></li>
 </ul>
 <?php
+//adminconfiguration-----------------------------------------------------------------------------------------------
     if($_SESSION["gebruikertype"] == "admin"){
-        echo"<p>je bent een admin</p>";
+        echo"<p id='admintext'>admin</p>";
     }
     ?>
 
 
 <?php
+//cookies---------------------------------------------------------------------------------------------------------
     if ($_SESSION["geaccepteerd"]==false){
         echo'
             <div class="cookies">
@@ -38,7 +42,7 @@
             </form>
         ';
     }
-
 ?>
-</div>
+
+
 </html>
