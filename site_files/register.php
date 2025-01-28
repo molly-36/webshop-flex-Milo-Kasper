@@ -6,8 +6,9 @@
     <link rel="stylesheet" href="registerStyle.css">
     <title>register</title>
 </head>
-<button><a href="index.php"><--- terug</a></button>
+<button id="terugr"><a href="index.php"><--- terug</a></button>
 <body>
+
 <?php
     include("connect.php");
     if (isset($_POST["submit"])) {
@@ -19,57 +20,52 @@
         if($result2->num_rows > 0) {
             echo '
                 <div>
-                <h1 id="h1A">account aanmaken</h1>
-                <form method="post" action="register.php">
-                <i id="slot" class="fa-solid fa-lock"></i>
-                <i id="logo" class="fa-solid fa-user"></i>
-                <input  id="invoer" type="text" name="username" placeholder="            your username"><br>
-                <input id="invoer" type="password" name="password" placeholder="            wachtwoord"><br>
-                <input id="knop" type="submit" name="submit" value="registreer"> 
-                </form><br>
-                <span style="color:red;font-size:100px;background-color:darkred;">user al in gebruik</span>
+                    <h1 id="h1A">account aanmaken</h1>
+                    <form method="post" action="register.php">
+                        <i id="slot" class="fa-solid fa-lock"></i>
+                        <i id="logo" class="fa-solid fa-user"></i>
+                        <input id="invoer" type="text" name="username" placeholder="            your username"><br>
+                        <input id="invoer" type="password" name="password" placeholder="            wachtwoord"><br>
+                        <input id="knop" type="submit" name="submit" value="registreer"> 
+                    </form><br>
+                    <span style="color:red;font-size:100px;background-color:darkred;">user al in gebruik</span>
                 </div>
-            ';
-                
-
-        }else{
+                ';
+            } else {
                 $sql = "INSERT into tabel_users (username, password) VALUES ('$username', '$password')";
                 $result = $mysqli->query($sql);
                 if ($result) {
                     header("Location: index.php");
-                }
-                else {
+                } else {
                     echo '
                     <div>
-                    <h1 id="h1A">account aanmaken</h1>
-                    <form method="post" action="register.php">
-                    <i id="slot" class="fa-solid fa-lock"></i>
-                    <i id="logo" class="fa-solid fa-user"></i>
-                    <input  id="invoer" type="text" name="username" placeholder="            your username"><br>
-                    <input id="invoer" type="password" name="password" placeholder="            wachtwoord"><br>
-                    <input id="knop" type="submit" name="submit" value="registreer"> 
-                </form><br>
-                <span style="color:red;font-size:100px;background-color:darkred;">er is iets fout gegaan: error 4</span>
-                </div>
-                ';
+                        <h1 id="h1A">account aanmaken</h1>
+                        <form method="post" action="register.php">
+                            <i id="slot" class="fa-solid fa-lock"></i>
+                            <i id="logo" class="fa-solid fa-user"></i>
+                            <input id="invoer" type="text" name="username" placeholder="            your username"><br>
+                            <input id="invoer" type="password" name="password" placeholder="            wachtwoord"><br>
+                            <input id="knop" type="submit" name="submit" value="registreer"> 
+                        </form><br>
+                        <span style="color:red;font-size:100px;background-color:darkred;">er is iets fout gegaan: error 4</span>
+                    </div>
+                    ';
                 }
             }
-    }
-    else {
-                echo '
-                <div>
-                    <h1 id="h1A">account aanmaken</h1>
-                    <form method="post" action="register.php">
+        } else {
+            echo '
+            <div>
+                <h1 id="h1A">account aanmaken</h1>
+                <form method="post" action="register.php">
                     <i id="slot" class="fa-solid fa-lock"></i>
                     <i id="logo" class="fa-solid fa-user"></i>
-                    <input  id="invoer" type="text" name="username" placeholder="            your username"><br>
+                    <input id="invoer" type="text" name="username" placeholder="            your username"><br>
                     <input id="invoer" type="password" name="password" placeholder="            wachtwoord"><br>
                     <input id="knop" type="submit" name="submit" value="registreer"> 
                 </form><br>
-                </div>
+            </div>
             ';
-    }
-?>
-       
+        }
+    ?>
 </body>
 </html>
