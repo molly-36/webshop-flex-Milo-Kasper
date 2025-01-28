@@ -1,0 +1,96 @@
+body{
+    margin: 0px;
+    background-color: black;
+}
+
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0px;
+    backdrop-filter: blur(3);
+    color: gold;
+    height: 80px;
+    width: 100%;
+}
+button{
+    backdrop-filter: blur(3px);
+}
+button:hover{
+    filter: blur(3px);
+}
+
+ul{
+    margin-top: 0px;
+    padding: 10px;
+    list-style-type: none;
+}
+
+.container{
+    width: 800px;
+    height:500px;
+    border: solid 5px;
+    border-color: white;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.56);
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;  
+    align-content: space-between;
+    align-items: flex-start;
+    margin: 100px 350px;
+    margin-top: 10px;
+}
+
+.fotobeginaanbod{
+    margin-top: 0px;
+    background-image: url(fototo.jpg);
+    height: 540px;
+    width: 100%;
+    background-repeat: no-repeat ;
+    background-size: cover;
+}
+
+.filtercontainer{
+    margin-top: 50px;
+    margin-right: 0px;
+    position: sticky; 
+    top: 150px;
+    left: 80px;
+    width: 150px;
+    border: solid 5px;
+    color: white;
+
+}
+
+.kid{
+    margin: 5px;
+    padding: 55px;
+    border: solid 3px;
+    border-radius: 10px;
+}
+
+#kid1{
+    background-color: blueviolet;
+}
+
+#kid2{
+    background-color: brown;
+}
+
+#kid3{
+    background-color: rgb(39, 219, 51);
+}
+
+#kid4{
+    background-color: cornflowerblue;
+}
+
+#kid5{
+    background-image: url("acc.png");
+    background-size: cover;
+}
+
+#kid6{
+    background-image: url(plop.jpg);
+    background-size: cover;
+}

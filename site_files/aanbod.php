@@ -3,10 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="aanbodStyle.css">
+    <link rel="stylesheet" href="aanbod.css">
     <title>Document</title>
 </head>
 <body>
+    <div class="fotobeginaanbod"> 
+    <div class="navbar">
+        <ul>
+            <li class="bobo"><button><a href="home.php">HOME</a></li>
+        </ul>
+    </div>
+    </div>
+<div class="filtercontainer">
+            poop
+        </div>
     <div class="container">
         <div class="kid" id="kid1">kind 1</div>
         <div class="kid" id="kid2">kind 2</div>

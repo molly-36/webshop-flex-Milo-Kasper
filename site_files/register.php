@@ -8,7 +8,6 @@
 </head>
 <button><a href="index.php"><--- terug</a></button>
 <body>
-    <h1>REGISTER</h1>
 <?php
     include("connect.php");
     if (isset($_POST["submit"])) {
