@@ -1,0 +1,126 @@
+body{
+    margin: 0px;
+    background-color: black;
+}
+
+a{
+    text-decoration: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 0px;
+    backdrop-filter: blur(3);
+    height: 40px;
+    width: 100%;
+}
+
+button{
+    background: transparent;
+    border: none;
+}
+button:hover{
+    filter: none;
+    width: 50px;
+    height: 50px;
+    font-size: large;
+    margin-right: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+ul{
+    margin-top: 0px;
+    padding: 10px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.container{
+    width: 990px;
+    height:fit-content;
+    border: solid 5px;
+    border-color: rgb(0, 0, 0);
+    border-radius: 8px;
+    background-color: rgba(40, 39, 41, 0.995);
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;  
+    align-content: space-between;
+    align-items: flex-start;
+    margin: 100px 115px;
+    margin-top: 10px;
+}
+
+.fotobeginaanbod{
+    margin-top: 0px;
+    background-image: url(fototo.jpg);
+    height: 540px;
+    width: 100%;
+    background-repeat: no-repeat ;
+    background-size: cover;
+}
+
+.filtercontainer{
+    margin-top: 50px;
+    margin-right: 0px;
+    position: sticky; 
+    top: 10px;
+    left: 135px;
+    width: 950px;
+    border: solid 5px;
+    border-color: beige;
+    color: rgb(41, 34, 34);
+    display: flex;
+    justify-content: center;
+    background-color: bisque;
+
+}
+
+.kid{
+    margin: 5px;
+    padding: 25px;
+    border-radius: 10px;
+    width: 350px;
+    height: 275px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(59, 56, 53);
+}
+
+.fotoauto{
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+}
+
+#foto1{
+    background-image: url("acc.png");
+}
+
+#kid2{
+    background-color: brown;
+}
+
+#kid3{
+    background-color: rgb(39, 219, 51);
+}
+
+#kid4{
+    background-color: cornflowerblue;
+}
+
+#kid5{
+    background-image: url("acc.png");
+    background-size: cover;
+}
+
+#kid6{
+    background-image: url(plop.jpg);
+    background-size: cover;
+}
+
