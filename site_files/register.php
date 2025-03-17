@@ -15,7 +15,8 @@
         $username = $_POST["username"];
         $password = $_POST["password"];
         //controleert of er al iemand is met dezelfde user
-        $sql2 = "SELECT * FROM tabel_users WHERE username = '$username'";
+        $sql2 = "SELECT * FROM tabel_users WHERE username = '$username' AND password= '$password'";
+        print $sql2;
         $result2 = $mysqli->query($sql2);
         if($result2->num_rows > 0) {
             echo '
@@ -35,7 +36,7 @@
                 $sql = "INSERT into tabel_users (username, password) VALUES ('$username', '$password')";
                 $result = $mysqli->query($sql);
                 if ($result) {
-                    header("Location: index.php");
+                   // header("Location: index.php");
                 } else {
                     echo '
                     <div>

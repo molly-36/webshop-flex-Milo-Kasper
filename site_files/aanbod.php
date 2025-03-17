@@ -14,7 +14,8 @@
             <li><button><a href="log_uit.php">LOG UIT</a></button></li>
         </ul>
     </div>
-    </div>  
+    </div>
+    <div class="onderkant">
     <div class="filtercontainer">
           filterbalk  
     </div>
@@ -34,5 +35,6 @@
         <div class="kid" id="kid8">kind 8</div>
         <div class="kid" id="kid9">kind 9</div>
     </div>
+    </div>  
 </body>
 </html>

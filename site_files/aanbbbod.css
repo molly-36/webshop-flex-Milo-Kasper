@@ -39,8 +39,12 @@ ul{
     flex-direction: row-reverse;
 }
 
+.onderkant{
+    margin: 5vh 18vw;
+}
+
 .container{
-    width: 990px;
+    width: 58vw;
     height:fit-content;
     border: solid 5px;
     border-color: rgb(0, 0, 0);
@@ -51,14 +55,13 @@ ul{
     justify-content: space-around;  
     align-content: space-between;
     align-items: flex-start;
-    margin: 100px 115px;
     margin-top: 10px;
 }
 
 .fotobeginaanbod{
     margin-top: 0px;
     background-image: url(fototo.jpg);
-    height: 540px;
+    height: 80vh;
     width: 100%;
     background-repeat: no-repeat ;
     background-size: cover;
@@ -69,7 +72,7 @@ ul{
     margin-right: 0px;
     position: sticky; 
     top: 10px;
-    left: 135px;
+    left: 21vw;
     width: 950px;
     border: solid 5px;
     border-color: beige;

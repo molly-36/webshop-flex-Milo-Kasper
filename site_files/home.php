@@ -25,7 +25,7 @@
 <?php
 //adminconfiguration-----------------------------------------------------------------------------------------------
     if($_SESSION["gebruikertype"] == "admin"){
-        echo"<p id='admintext'>admin</p>";
+        echo"<button id='admintext'><a href='invoegen.php'>admin</a></button>";
     }
     ?>
 
