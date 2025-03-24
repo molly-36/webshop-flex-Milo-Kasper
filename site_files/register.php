@@ -36,7 +36,7 @@
                 $sql = "INSERT into tabel_users (username, password) VALUES ('$username', '$password')";
                 $result = $mysqli->query($sql);
                 if ($result) {
-                   // header("Location: index.php");
+                   header("Location: index.php");
                 } else {
                     echo '
                     <div>
