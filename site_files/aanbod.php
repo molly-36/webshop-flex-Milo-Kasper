@@ -19,6 +19,36 @@
     <div class="filtercontainer">
           filterbalk  
     </div>
+    <?php
+    include ("connect.php");
+    ?>
+  
+        <?php
+        // check
+        if(isset($_POST['insertauto'])&&!empty($_POST['autoNaam'])
+        &&!empty($_POST['context'])
+        &&!empty($_POST['prijs'])
+        &&isset($_FILES['image']) && $_FILES['image']['error'] == 0){
+        //gegevens van de auto
+            $auto_naamauto=$_POST['autoNaam'];
+            $auto_beschrijving=$_POST['context'];
+            $auto_prijs=$_POST['prijs'];
+                
+            $auto_productfoto =$_FILES['image']['name'];
+            $auto_tmp =$_FILES['image']['tmp_name'];
+            //insert
+            $sql_voegauto = "INSERT INTO tblautos (autoNaam,context,prijs,image) VALUES ('$auto_naamauto','$auto_beschrijving','$auto_prijs','$auto_productfoto')";
+            if($mysqli->query($sql_voegauto)){
+            move_uploaded_file($auto_tmp,"./producten/$auto_productfoto");
+                header("Location: aanbod.php");
+                
+                exit();
+                
+            }else{
+                echo"er ging iets fout probeer nog is";
+            }
+                
+        }?>
     <div class="container">
         <div class="kid" id="kid1">
             <div class="fotoauto" id="foto1"></div>
