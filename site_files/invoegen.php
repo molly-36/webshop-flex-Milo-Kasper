@@ -39,7 +39,7 @@
             //insert
             $sql_voegauto = "INSERT INTO tblautos (autoNaam,context,prijs,image) VALUES ('$auto_naamauto','$auto_beschrijving','$auto_prijs','$auto_productfoto')";
             if($mysqli->query($sql_voegauto)){
-            move_uploaded_file($auto_tmp,"./producten/$auto_productfoto");
+            move_uploaded_file($auto_tmp,"./fotos/$auto_productfoto");
                 header("Location: aanbod.php");
                 
                 exit();

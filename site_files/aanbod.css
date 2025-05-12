@@ -43,20 +43,30 @@ ul{
     margin: 5vh 18vw;
 }
 
-.container{
-    width: 58vw;
-    height:fit-content;
-    border: solid 5px;
-    border-color: rgb(0, 0, 0);
-    border-radius: 8px;
-    background-color: rgba(40, 39, 41, 0.995);
-    display:flex;
+.container {
+    width: 80%;
+    max-width: 1200px;
+    height: fit-content;
+    margin: 20px auto; /* Centreert de container */
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 15px;
+    background-color: rgba(40, 39, 41, 0.95);
+    display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;  
-    align-content: space-between;
+    justify-content: center; /* Centreert de items in de container */
     align-items: flex-start;
-    margin-top: 10px;
+    gap: 20px; /* Ruimte tussen de items */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Voegt een zachte schaduw toe */
+    transition: all 0.3s ease;
 }
+
+/* Wanneer je over de container zweeft, krijgt het een lichte schaduw en vergroot het iets */
+.container:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    transform: scale(1.02);
+}
+
 
 .fotobeginaanbod{
     margin-top: 0px;
@@ -67,21 +77,29 @@ ul{
     background-size: cover;
 }
 
-.filtercontainer{
-    margin-top: 50px;
-    margin-right: 0px;
-    position: sticky; 
+.filtercontainer {
+    position: sticky;
     top: 10px;
-    left: 21vw;
-    width: 950px;
-    border: solid 5px;
-    border-color: beige;
-    color: rgb(41, 34, 34);
+    margin: 50px auto;
+    width: 80%;
+    max-width: 950px;
+    padding: 20px 30px;
+    
+    background-color: #fdf0d5; 
+    border: 2px solid #e6d5b8;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
     display: flex;
     justify-content: center;
-    background-color: bisque;
-
+    align-items: center;
+    color: #332d2d;
+    font-size: 1.1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 10;
+    transition: all 0.3s ease;
 }
+
 
 .kid {
     margin: 10px;
@@ -129,18 +147,24 @@ ul{
 }
 
 .inspecteerknop button {
-    padding: 8px 15px;
+    padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     background-color: #ffa500;
     color: #000;
     font-weight: bold;
+    font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
+    text-align: center;
+    white-space: nowrap; 
+    min-width: 120px; 
 }
 
 .inspecteerknop button:hover {
     background-color: #ff8c00;
+    transform: scale(1.1); 
+    padding: 12px; 
 }
 
 
