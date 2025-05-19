@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><|admin|> auto's invoegen</title>
 </head>
+                <a href="aanbod.php">terug naar aanbod</a>    
     <style>
         body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -175,6 +176,7 @@ a:hover {
         }?>
 <div class="containerBox">
             <?php
+            
             //display de inhoud
 
             $teller = 0;
@@ -207,7 +209,5 @@ a:hover {
             ?>
             
 </div>
-                <a href="aanbod.php">terug naar aanbod</a>    
-
 </body>
 </html>

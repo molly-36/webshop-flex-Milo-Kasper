@@ -20,6 +20,7 @@
     if(isset($_POST["submit"])) {
         $password = $_POST["password"];
         $username = $_POST["username"];
+        $_SESSION['username'] = $_POST["username"];
 
 
             $sql = "SELECT * FROM tabel_users WHERE username = '$username' AND password = '$password'";

@@ -1,0 +1,228 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    padding: 20px 40px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
+
+ul li {
+    margin-left: 30px;
+}
+
+ul li a,
+#log_uit_button a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #ffffffcc;
+    padding: 10px 18px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+ul li a:hover,
+#log_uit_button a:hover {
+    background: linear-gradient(135deg, #8e44ad, #3498db);
+    color: white;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+
+/* Logout button container */
+#log_uit_button {
+    border: none;
+    background: transparent;
+}
+
+/* Admin Button */
+#admintext {
+    display: inline-block;
+    margin: 40px;
+    padding: 12px 28px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+    background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+    color: #2c3e50;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#admintext:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 36px rgba(0,0,0,0.4);
+}
+
+#admintext a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Cookie Pop-up */
+.cookies {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    text-align: center;
+    animation: slideIn 1s ease forwards;
+}
+
+#cookieText {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.cookieOption {
+    padding: 10px 22px;
+    margin: 0 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cookieOption:hover {
+    background: linear-gradient(135deg, #2193b0, #6dd5ed);
+    transform: translateY(-2px);
+}
+
+/* Animaties */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, 50px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    ul {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+
+    ul li {
+        margin: 10px 0;
+    }
+
+    .cookies {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+.welcome-card {
+    max-width: 800px;
+    margin: 60px auto 40px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    font-family: 'Playfair Display', serif;
+}
+
+.welcome-card h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #f1c40f;
+}
+
+.welcome-card p {
+    font-size: 1.1rem;
+    color: #ffffffcc;
+}
+
+.news-section {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.news-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #ecf0f1;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.news-item {
+    background: rgba(255,255,255,0.05);
+    padding: 25px;
+    border-radius: 16px;
+    text-align: left;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.news-item:hover {
+    transform: translateY(-5px);
+}
+
+.news-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.news-item p {
+    color: #cccccc;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+}
+
+.news-item a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.news-item a:hover {
+    text-decoration: underline;
+}
